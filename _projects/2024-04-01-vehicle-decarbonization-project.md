@@ -1,12 +1,11 @@
 ---
 title: 'Vehicle decarbonization project'
+collection: projects
+type: "Conference proceedings talk"
 date: 2024-04-01
 permalink: /projects/2024-04-01-vehicle-decarbonization-project/
-collection: projects
-tags:
-  - cool posts
-  - category1
-  - category2
+venue: "London School of Testing"
+
 ---
 
 This is a sample blog post. Lorem ipsum I can't remember the rest of lorem ipsum and don't have an internet connection right now. Testing testing testing this blog post. Blog posts are cool.
