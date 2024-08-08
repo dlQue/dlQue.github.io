@@ -1,7 +1,7 @@
 ---
 title: 'Vehicle decarbonization project'
 date: 2024-04-01
-permalink: /projects/vehicle-decarbonization-project/
+permalink: /projects/2024-04-01-vehicle-decarbonization-project/
 collection: projects
 tags:
   - cool posts
