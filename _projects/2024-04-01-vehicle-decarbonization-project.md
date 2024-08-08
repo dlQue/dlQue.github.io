@@ -1,7 +1,7 @@
 ---
 title: 'Vehicle decarbonization project'
 collection: projects
-type: "Talk"
+type: "Project"
 type: "Conference proceedings talk"
 date: 2024-04-01
 permalink: /projects/2024-04-01-vehicle-decarbonization-project/
