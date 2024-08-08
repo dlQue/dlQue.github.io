@@ -1,6 +1,6 @@
 ---
 title: 'Vehicle decarbonization project'
-date: 2024-03
+date: 2024-04-01
 permalink: /projects/vehicle-decarbonization-project/
 collection: projects
 tags:
