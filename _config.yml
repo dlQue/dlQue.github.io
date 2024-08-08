@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Donglin Que"
-  pronouns         : "He/him"  
+  pronouns         : "He/Him"  
   bio              : "Student at University of Toronto"
   location         : "Toronto, ON"
   employer         : "University of Toronto"
@@ -261,7 +261,7 @@ defaults:
       author_profile: true
       share: true
       comment: true
-  # _talks
+  # _talks/projects
   - scope:
       path: ""
       type: projects

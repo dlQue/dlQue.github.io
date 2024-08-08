@@ -1,7 +1,8 @@
 ---
-title: 'Blog Post number 4'
-date: 2015-08-14
-permalink: /posts/2012/08/blog-post-4/
+title: 'Vehicle decarbonization project'
+date: 2024-03
+permalink: /projects/vehicle-decarbonization-project/
+collection: projects
 tags:
   - cool posts
   - category1
