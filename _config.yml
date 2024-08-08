@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : ""
+title                    : "Donglin Q"
 title_separator          : "-"
 name                     : &name "Donglin Q"
 description              : &description "Student at University of Toronto"
