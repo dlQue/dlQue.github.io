@@ -23,5 +23,7 @@ Aren't headings cool?
 
 Something else here...
 
+Full project file in repository: [https://github.com/dlQue/Vehicle-decarbonization](https://github.com/dlQue/Vehicle-decarbonization)
 
-The link of heat map: [here](http://dlque.github.io/files/sdg-11.7.1-a.html)
+
+The link of heat map: [here](http://dlque.github.io/files/dashboard.html)
