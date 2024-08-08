@@ -23,7 +23,7 @@ author:
   # Biographic information
   avatar           : "profile.png"
   name             : "Donglin Que"
-  pronouns         : "he/him"  
+  pronouns         : "He/him"  
   bio              : "Student at University of Toronto"
   location         : "Toronto, ON"
   employer         : "University of Toronto"
@@ -201,15 +201,15 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true
     permalink: /:collection/:path/
   portfolio:
-    output: true
+    output: false
     permalink: /:collection/:path/
-  talks:
+  projects:
     output: true
     permalink: /:collection/:path/
 
