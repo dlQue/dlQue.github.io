@@ -1,6 +1,6 @@
 ---
 title: 'Vehicle decarbonization project'
-collection: projects
+collection: Projects
 type: "Project"
 type: "project"
 date: 2024-04-01
