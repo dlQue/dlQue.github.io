@@ -1,11 +1,6 @@
 # dlQue.github.io
 
 
+Working on it...
 
-
-
-This is a testing channel..temporary server
-
-
-
-2024.08
+2024.08s

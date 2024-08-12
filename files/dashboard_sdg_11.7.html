@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html style="height: 100%;">
+<head>
+    <title>SDG 11.7 dashboard</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+        #mapFrame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        #buttonPanel {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2000;
+        }
+    </style>
+</head>
+<body>
+    <div id="buttonPanel">
+        <button onclick="loadMap('sdg-11.7.1-a.html')">SDG 11.7.1(a)</button>
+        <button onclick="loadMap('sdg-11.7.1-b.html')">SDG 11.7.1(b)</button>
+    </div>
+
+    <!-- Set the src attribute to heatmap_all_with_legend.html to load it by default -->
+    <iframe id="mapFrame" src="sdg-11.7.1-a.html"></iframe>
+
+    <script>
+        function loadMap(filename) {
+            document.getElementById('mapFrame').src = filename;
+        }
+    </script>
+</body>
+</html>
