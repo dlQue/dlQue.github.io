@@ -14,7 +14,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between; /* Ensures space between text and logo */
-            padding: 5px 20px;
+            padding: 5px 15px;
             background-color: #ffffff; /* White background */
             color: #000000; /* Black font */
             box-sizing: border-box;
@@ -23,7 +23,7 @@
         .HeaderHTML .text-container {
             flex: 1; /* Take up remaining space */
             min-width: 0; /* Prevents the text container from shrinking too much */
-            margin-right: 20px; /* Space between text and logo */
+            margin-right:15px; /* Space between text and logo */
         }
         .HeaderHTML h2 {
             font-family: Georgia, serif; /* Assuming $serif-font-stack is Georgia */
@@ -32,7 +32,7 @@
             white-space: normal; /* Allow wrapping */
             overflow: hidden;
             text-overflow: ellipsis; /* Adds ellipsis if title overflows */
-            font-size: 24px;
+            font-size: 20px;
         }
         .HeaderHTML p {
             margin: 0;
@@ -59,9 +59,9 @@
             border: 1px solid #ddd;
             border-radius: 10px; /* Make the corners rounded */
             width: fit-content;
-            margin: 10px 20px; /* Align to the left with padding from the left edge */
+            margin: 8px 14px; /* Align to the left with padding from the left edge */
             overflow: hidden; /* Ensure rounded corners apply to content */
-            font-size: 14px; /* Adjust font size of the buttons */
+            font-size: 13px; /* Adjust font size of the buttons */
         }
         #buttonPanel button {
             flex: 1;
@@ -78,8 +78,8 @@
         }
         #buttonPanel button svg {
             margin-right: 5px; /* Space between icon and text */
-            height: 16px;
-            width: 16px;
+            height: 14px;
+            width: 14px;
         }
         #buttonPanel button:first-child {
             border-radius: 10px 0 0 10px; /* Round the left corners of the first button */
@@ -108,75 +108,54 @@
             object-fit: cover; /* Ensures the map scales to always show the full world map */
         }
         .SourcesFooterHTML {
-            padding: 10px 20px; /* Adjust padding for smaller footer */
+            padding: 10px 15px; /* Adjust padding for smaller footer */
             background-color: #ffffff; /* White background */
             color: #000000; /* Black font */
             border-top: 1px solid #ddd; /* Optional: a light border for separation */
             box-sizing: border-box;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            font-size: 14px; /* Adjust font size for the footer */
+            align-items: flex-start; /* Align to the top of the container */
+            font-size: 12px; /* Adjust font size for the footer */
+            flex-wrap: wrap; /* Allow wrapping for the footer content */
+            position: relative; /* To allow positioning of download button */
         }
-        .SourcesFooterHTML a {
-            text-underline-offset: auto;
-            color: #000000; /* Black font */
-        }
-        .SourcesFooterHTML a:visited {
-            color: #000000; /* Black font */
+        .SourcesAndLicense {
+            flex-grow: 1;
+            margin-right: 10px; /* Adjusts space between the license and the download button */
+            min-width: 0;
+            overflow: hidden;
         }
         .SourcesFooterHTML p {
             margin: 0;
-            white-space: nowrap; /* Prevents text from wrapping */
+            white-space: normal; /* Allow text to wrap */
             overflow: hidden;
             text-overflow: ellipsis; /* Adds ellipsis if text overflows */
         }
-        .sources a.learn-more-about-data,
-        .note a:not(.dod-span) {
-            text-decoration: underline;
-        }
-        .sources a.learn-more-about-data:hover,
-        .note a:not(.dod-span):hover {
-            text-decoration: none;
-        }
-        .sources .markdown-text-wrap__line:last-child {
-            display: inline-block;
-        }
-        .license {
-            white-space: nowrap;
-            margin-bottom: 0;
-        }
-        .license a {
-            text-decoration: none;
-        }
-        .license a:hover {
-            text-decoration: underline;
-        }
-        .SourcesAndLicense {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-        }
-        .SourcesFooterHTMLBottom {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 8px;
-        }
         .downloadButton {
-            padding: 8px 15px; /* Adjust padding for smaller button */
+            padding: 8px 14px; /* Adjust padding for smaller button */
             background-color: #2980b9;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 4px;
             cursor: pointer;
             text-decoration: none;
-            margin-left: auto;
             font-size: 14px; /* Adjust font size for the download button */
+            display: flex;
+            align-items: center;
+            position: absolute; /* Positioning it to the right */
+            right: 15px; /* 15px from the right edge */
+            top: 10px; /* Align with the top of the footer */
         }
-        .downloadButton:hover {
-            background-color: #3498db;
+        .downloadButton svg {
+            margin-right: 5px; /* Space between icon and text */
         }
+        
+        /* Media query for small screens */
+        @media (max-width: 600px) {
+            .downloadButton span {
+                display: none; /* Hide text when screen width is less than 600px */
+            }
+        }             
     </style>
 </head>
 <body>
@@ -221,9 +200,9 @@
         </div>
         <button class="downloadButton" href="files/sdg_11-7-1 copy.xlsx">
             <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="download" class="svg-inline--fa fa-download" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="14" height="14"><path fill="currentColor" d="M288 32c0-17.7-14.3-32-32-32s-32 14.3-32 32V274.7l-73.4-73.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L288 274.7V32zM64 352c-35.3 0-64 28.7-64 64v32c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V416c0-35.3-28.7-64-64-64H346.5l-45.3 45.3c-25 25-65.5 25-90.5 0L165.5 352H64zm368 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"></path></svg>
-            Download data
+            <span>Download Data</span>
         </button> <!-- Replace with your data file path -->
-    </div>    
+    </div>        
 
     <script>
         function selectTab(button, url) {
